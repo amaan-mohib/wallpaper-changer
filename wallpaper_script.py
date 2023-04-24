@@ -5,7 +5,7 @@ DELAY = 24 * 60 * 60
 
 
 def wallpaper_filter(path):
-    return os.path.isfile(path) and (".jpg" in path or ".png" in path)
+    return os.path.isfile(wallpaper_dir + "/" + path) and (".jpg" in path or ".png" in path)
 
 
 def change_wallpaper(path):
